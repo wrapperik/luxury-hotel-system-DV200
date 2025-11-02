@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a2f2e;
+  --color-primary-light: #2d4746;
+  --color-primary-dark: #0f1d1c;
+  --color-gold: #c9a961;
+  --color-gold-light: #dbc288;
+  --color-gold-dark: #a68a4d;
+  --color-cream: #f5f1e8;
+  --color-cream-light: #faf8f3;
+  --color-cream-dark: #e8e3d8;
+  --color-accent: #8b7355;
+  --color-dark: #0a1514;
+  
+  --font-family-serif: 'Playfair Display', serif;
+  --font-family-elegant: 'Cormorant Garamond', serif;
+  --font-family-sans: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0f1d1c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.02em;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Luxury gradient backgrounds */
+.gradient-primary {
+  background: linear-gradient(135deg, #1a2f2e 0%, #0f1d1c 100%);
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, #dbc288 0%, #c9a961 50%, #a68a4d 100%);
+}
+
+.gradient-overlay {
+  background: linear-gradient(to bottom, rgba(26, 47, 46, 0.85), rgba(15, 29, 28, 0.95));
+}
+
+/* Gold shimmer effect */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  animation: shimmer 3s infinite;
+  background: linear-gradient(to right, transparent 0%, rgba(201, 169, 97, 0.3) 50%, transparent 100%);
+  background-size: 1000px 100%;
+}
