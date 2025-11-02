@@ -10,15 +10,15 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
+    "@vitejs/plugin-react": "^4.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^7.9.5",
-    "tailwindcss": "^4.1.16"
+    "tailwindcss": "^4.1.16",
+    "vite": "^7.1.12"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^7.1.12"
+    "@types/react-dom": "^18.0.10"
   }
 }
